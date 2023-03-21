@@ -130,3 +130,6 @@ dmypy.json
 
 # Mac OS X file manager
 .DS_Store
+
+# Django secret key
+proj_maths/conf.py
