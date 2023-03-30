@@ -1,6 +1,6 @@
 def get_terms_for_table():
     terms = []
-    with open("./proj_maths/data/terms.csv", "r", encoding="utf-8") as f:
+    with open("./data/terms.csv", "r", encoding="utf-8") as f:
         cnt = 1
         for line in f.readlines()[1:]:
             term, definition, source = line.split(";")
