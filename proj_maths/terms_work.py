@@ -18,7 +18,7 @@ def write_term(new_term, new_definition):
     terms_sorted = old_terms + [new_term_line]
     terms_sorted.sort()
     new_terms = [title] + terms_sorted
-    with open("./proj_maths/data/terms.csv", "w", encoding="utf-8") as f:
+    with open("./data/terms.csv", "w", encoding="utf-8") as f:
         f.write("\n".join(new_terms))
 
 
@@ -26,7 +26,7 @@ def get_terms_stats():
     db_terms = 0
     user_terms = 0
     defin_len = []
-    with open("./proj_maths/data/terms.csv", "r", encoding="utf-8") as f:
+    with open("./data/terms.csv", "r", encoding="utf-8") as f:
         for line in f.readlines()[1:]:
             term, defin, added_by = line.split(";")
             words = defin.split()
